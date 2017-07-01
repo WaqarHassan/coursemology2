@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # Represents a user in the application. Users are shared across all instances.
 class User < ActiveRecord::Base
-  SYSTEM_USER_ID = 0
+  SYSTEM_USER_ID = 1
   DELETED_USER_ID = -1
 
   include UserSearchConcern
@@ -19,9 +19,9 @@ class User < ActiveRecord::Base
     #
     # @return [User]
     def system
-      @system ||= find(User::SYSTEM_USER_ID)
-      raise 'No system user. Did you run rake db:seed?' unless @system
-      @system
+      # @system ||= find(User::SYSTEM_USER_ID)
+      # raise 'No system user. Did you run rake db:seed?' unless @system
+      # @system
     end
 
     # Finds the Deleted user.
