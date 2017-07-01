@@ -78,7 +78,7 @@ gem 'ejs'
 gem 'high_voltage'
 # Paginator for Rails
 gem 'kaminari'
-
+gem 'image_optim_pack'
 group :development do
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring

@@ -121,6 +121,14 @@
     "webpack-dev-server": "^2.4.5"
   },
   "license": "MIT",
-  "repository": "git+https://github.com/Coursemology/coursemology2.git",
-  "main": "app/index.js"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Coursemology/coursemology2.git"
+  },
+  "main": "app/index.js",
+  "bugs": {
+    "url": "https://github.com/Coursemology/coursemology2/issues"
+  },
+  "homepage": "https://github.com/Coursemology/coursemology2#readme",
+  "author": ""
 }
