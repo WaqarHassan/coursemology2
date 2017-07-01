@@ -8,7 +8,7 @@ gem 'tzinfo-data', platforms: [:mswin, :mswin64]
 gem 'bundler', '>= 1.10.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.8'
+gem 'rails', '~> 4.2.9'
 
 # Use PostgreSQL for the backend
 gem 'pg', '>= 0.18.2'
@@ -79,6 +79,8 @@ gem 'high_voltage'
 # Paginator for Rails
 gem 'kaminari'
 gem 'image_optim_pack'
+# Work with Docker
+gem 'docker-api'
 group :development do
   # Spring speeds up development by keeping your application running in the background.
   # Read more: https://github.com/rails/spring
