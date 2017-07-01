@@ -6,10 +6,10 @@ class IntegrateAssessmentsWithPolyglotFramework < ActiveRecord::Migration
     end
     remove_column :course_assessment_question_programming, :language
 
-    python27_id = Polyglot::Language::Python::Python2Point7.instance.id
-    execute <<-SQL
-      UPDATE course_assessment_question_programming SET language_id = #{python27_id}
-    SQL
+    # python27_id = Polyglot::Language::Python::Python2Point7.instance.id
+    # execute <<-SQL
+    #   UPDATE course_assessment_question_programming SET language_id = #{python27_id}
+    # SQL
 
     change_column_null :course_assessment_question_programming, :language_id, false
   end
